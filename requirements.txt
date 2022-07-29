@@ -3,3 +3,4 @@ gunicorn
 requests
 cchardet
 dill
+git+https://github.com/QGB/QPSU
