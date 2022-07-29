@@ -5,9 +5,9 @@ from qgb import py,U,T,F
 
 
 def app(env, start_response):
-    code=env['PATH_INFO'][1:]
-    code=T.url_decode(code)
-    if code.endswith('/'):code=code[:-1]
+    #U.pprint(env)
+    import requests
+    code=requests.get('https://qmm0.pythonanywhere.com/-r=code',).text
     
     # r=f'''{U.stime()}\n{env}\n{"="*77}\n{start_response}'''
     start_response('200 OK', [('Content-Type','text/plain;charset=utf-8')])
