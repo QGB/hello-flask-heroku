@@ -15,3 +15,5 @@ def app(env, start_response):
     start_response('200 OK', [('Content-Type','text/plain;charset=utf-8')])
     rb=U.execResult(code,globals=py.globals(),locals=py.locals()).encode('utf-8')
     return [rb]
+
+app=U._import('qgb.N.mirror_cache').app
