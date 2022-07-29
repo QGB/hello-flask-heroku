@@ -11,4 +11,5 @@ def app(env, start_response):
     
     # r=f'''{U.stime()}\n{env}\n{"="*77}\n{start_response}'''
     start_response('200 OK', [('Content-Type','text/plain;charset=utf-8')])
-    return [U.execResult(code,globals=py.globals(),locals=py.locals())]
+    rb=U.execResult(code,globals=py.globals(),locals=py.locals()).encode('utf-8')
+    return [rb]
