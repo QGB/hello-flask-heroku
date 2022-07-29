@@ -4,3 +4,6 @@ requests
 cchardet
 dill
 git+https://github.com/QGB/QPSU
+
+wcwidth
+ipython
