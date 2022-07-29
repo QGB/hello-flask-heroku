@@ -1,5 +1,4 @@
-#本git库不更新 ，依赖的 代码库也不更新？
-from qgb import py,U,T,F
+from qgb import py,U,T,F,N
 
 
 
