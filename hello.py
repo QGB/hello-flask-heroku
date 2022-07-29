@@ -1,9 +1,3 @@
-from flask import Flask
-app = Flask(__name__)
+from qgb import py,U,T,N,F
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-if __name__ == '__main__':
-    app.run()
+from qgb.N.mirror_cache import app
